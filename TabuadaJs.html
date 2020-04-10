@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Tabuada Em js</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	header{
+		color: white;
+		text-align: center;
+	}
+	section{
+		background: white;
+		border-radius: 10px;
+		padding: 15px;
+		width: 500px;
+		height: 290px;
+		margin: auto;
+		box-shadow: 3px 3px 10px rgba(0, 0,0, 0.363);
+	}
+	footer{
+		color: white;
+		text-align: center;
+		font-style: italic;
+	}
+	input[type="submit"]{
+		height: 32px;
+		border-radius: 8px;
+		color: white;
+		background: #333;
+		position: relative;
+		top: 32px;
+		left: -150px;
+		outline: none;
+	}
+	input[type="submit"]:hover{
+		background: #444;
+		transition-duration: 0.20s;
+	}
+	#seltab{
+		position: relative;
+		top: 30px;
+		left: 170px;
+		width: 170px;
+		border-radius: 4px;
+		outline: none;
+	}
+	#seltab:hover{
+		display: inline-block;
+		border-bottom: 2px solid #f00;
+		transform: scale(1.3);
+	}
+	#txtn{
+		height: 20px;
+		border-radius: 5px;
+		outline: none;
+	}
+</style>
+<body>
+<header>
+	<h1>Tabuada</h1><span style="color: yellow; position: absolute; top: 72px;">JavaScript</span>
+</header>
+<section>
+		<div>
+			<p>Número: <input type="number" name="num" id="txtn">
+				<input type="submit" value="Gerar Tabuada" onclick="tabuada()"></p>
+			</div>
+	<select name="tabuada" id="seltab" size="10">
+		<option>Digite um número acima</option>
+	</select>
+</section>
+<footer style="border-bottom: 2px solid #f00; position: absolute; left: 620px;">
+	<p>&copy; By Edson</p>
+</footer>
+<script src="Tabuada.js"></script>
+</body>
+</html>

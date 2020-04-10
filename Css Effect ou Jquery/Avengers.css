@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+section{
+	position: relative;
+	height: 100vh;
+	display: flex;
+	background: #000;
+}
+section .screen{
+	position: relative;
+	flex-grow: 2;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	overflow: hidden;
+	transition: 1s;
+}
+section .screen:nth-child(1){
+	background: url(https://ep00.epimg.net/cultura/imagenes/2016/04/27/actualidad/1461766443_775116_1461772632_noticia_fotograma.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section .screen:nth-child(2){
+	background: url(https://i.pinimg.com/originals/2f/6c/41/2f6c4128d80e61e2255b0edf7f03571b.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section .screen:hover{
+	flex-grow: 2;
+}
+section:hover .screen{
+	opacity: 0.1;
+}
+section .screen:hover{
+	flex-grow: 5;
+	opacity: 1;
+}
+section .screen:nth-child(3){
+	background: url(https://i1.wp.com/lopezdoriga.com/wp-content/uploads/2017/10/Thor-Ragnarok.jpg?resize=980%2C550&ssl=1);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section .screen .content{
+	position: absolute;
+	width: 400px;
+	height: auto;
+	background: #fff;
+	padding: 40px;
+	box-sizing: border-box;
+	transform: translateX(100%);
+	transition: 0.5s;
+	text-align: justify;
+}
+section .screen:hover .content{
+	transform: translateX(0);
+	transition-delay: 1s;
+}
+section .screen .content h2{
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #ed363a;
+}
+section .screen .content p{
+	margin: 0;
+	padding: 0;
+}

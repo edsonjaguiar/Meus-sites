@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="Slides.css">
+</head>
+<div class="middle">
+	<div class="sm-container">
+		<i class="show-btn fas fa-user"></i>
+		<div class="sm-menu">
+			<a href="https://www.facebook.com/profile.php?id=100008974749062"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+			<a href="#"><i class="fab fa-whatsapp"></i></a>
+		</div>
+	</div>
+</div>
+<script>
+	$(".show-btn").click(function(){
+		$(".sm-menu").fadeToggle("fast");
+	});
+</script>
+</body>
+</html>

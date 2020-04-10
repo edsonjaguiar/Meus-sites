@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escrever</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Escrever.css">
+</head>
+<body>
+<div id="text">
+
+</div>
+<script type="text/javascript">
+	var i=0,text;
+	text = "Edson É Lindo"
+
+	function typing() {
+		if(i<text.length){
+			document.getElementById("text").innerHTML += text.charAt(i);
+			i++;
+			setTimeout(typing,110)
+		}
+	}
+	typing()
+</script>
+</body>
+</html>
